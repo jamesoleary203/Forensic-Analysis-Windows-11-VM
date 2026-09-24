@@ -35,6 +35,7 @@ This is a written report of how I built a forensic analysis virtual machine to c
 	- Autopsy
 	- NetworkMiner
 - Prior to downloading any evidence I created a cases folder at C:\Cases and excluded it from the Microsoft Defender
+- You can see the Cases folder below
 
   <img width="916" height="887" alt="image" src="https://github.com/user-attachments/assets/760c91ae-b4d0-408e-b303-ff1b95046594" />
 
