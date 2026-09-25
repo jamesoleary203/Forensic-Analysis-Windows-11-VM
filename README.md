@@ -2,8 +2,8 @@
 This is a written report of how I built a forensic analysis virtual machine to create a safe curated space for personal digital forensic lab work. 
 
 ### Setup
-- **Host**: Windows 11 pro running Hyper-V on 32GB of Ram
-- **VM**: 12 GB static Ram, 250 GB disk, TPM on
+- **Host**: Windows 11 Pro running Hyper-V on 32GB of RAM
+- **VM**: 12 GB static RAM, 250 GB disk, TPM on
 - **Checkpoints**: Standard checkpoints on, automatic checkpoints disabled
 - **Guest Services**: Disabled
 
@@ -11,8 +11,8 @@ This is a written report of how I built a forensic analysis virtual machine to c
 
 
 ### Sept 21: VM Creation and 1st Tools
-- Getting windows 11 iso was easily available on Microsoft's website. Booting the VM was relatively easy and the only hurdle I ran into was that TPM was not enabled at the start.
-- After successful boot I downloaded the install script needed to download Eric Zimmerman tools. The script was successful but in order to run the tools I need to download the .NET9 Runtime. 
+- Getting Windows 11 ISO was easily available on Microsoft's website. Booting the VM was relatively easy and the only hurdle I ran into was that TPM was not enabled at the start.
+- After successful boot I downloaded the install script needed to download Eric Zimmerman tools. The script was successful but in order to run the tools I needed to download the .NET 9 Runtime 
 - Following this I completed my download of Hayabusa
 - I attempted to download Chainsaw but after an attempt to run it the program failed silently 
   
@@ -28,7 +28,7 @@ This is a written report of how I built a forensic analysis virtual machine to c
 
 ### Sept 24: Finish Installing Tools/Building VM
 - These are the tools that I installed to finish off my workspace
-	- RegRipper4.0: Accidently downloaded the wrong version but resolving was simple
+	- RegRipper4.0: Accidentally downloaded the wrong version but resolving was simple
 	- Velociraptor
 	- Python 3.12
 	- Volatility3
@@ -41,14 +41,14 @@ This is a written report of how I built a forensic analysis virtual machine to c
 
 	- Due to the fact that some images may contain real malware we do not want Defender to quarantine evidence
 - I then created a VM checkpoint for a baseline
-- Heres what the tool list so far looks like
+- Here's what the tool list so far looks like
 
 <img width="1007" height="885" alt="image" src="https://github.com/user-attachments/assets/47239480-425a-4d89-a86f-0e8bb44bfcd6" />
 
 
   ### What I would tell someone trying to do this after my experience
-  - Install .NET9 and the Microsoft VC++ Redistributable before downloading forensic tools
-  - Zips downloaded from the internet might get flagged by windows so run Unblock-File prior to extraction
+  - Install .NET 9 and the Microsoft VC++ Redistributable before downloading forensic tools
+  - Zips downloaded from the internet might get flagged by Windows so run Unblock-File prior to extraction
   - Take checkpoints before big changes
 
   
